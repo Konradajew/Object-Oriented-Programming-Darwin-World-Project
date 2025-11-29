@@ -56,7 +56,6 @@ Watch hundreds of creatures eat, reproduce, mutate, age, escape fire, and evolve
 ## 🚀 How to Run
 
 ```bash
-git clone https://github.com/matwoj8/Darwin_World_Simulation.git
-mv Darwin_World_Simulation oolab
-cd oolab
+git clone https://github.com/Konrdajew/Object-Oriented-Programming-Darwin-World-Project.git
+cd Object-Oriented-Programming-Darwin-World-Project/oolab
 ./gradlew run
