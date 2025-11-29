@@ -40,16 +40,16 @@ Watch hundreds of creatures eat, reproduce, mutate, age, escape fire, and evolve
 ## Screenshots
 
 ### Start Configuration
-![Initial parameters](screenshots/start.png)
+![Initial parameters](start.png)
 
-### Global Map Statistics
-![Map stats](screenshots/map_stats.png)
+### Global Map Statistics after 100 days
+![Map stats](map_stats.png)
 
 ### Selected Animal Statistics
-![Animal details](screenshots/animal_stats.png)
+![Animal details](animal_stats.png)
 
 ### Simulation in Action
-![Running world](screenshots/simulation.jpg)
+![Running world](simulation.jpg)
 
 ## How to Run
 
@@ -57,3 +57,4 @@ Watch hundreds of creatures eat, reproduce, mutate, age, escape fire, and evolve
 git clone https://github.com/matwoj8/Darwin_World_Simulation.git
 cd Darwin_World_Simulation
 ./gradlew run
+
