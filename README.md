@@ -1,42 +1,41 @@
 # Darwin World Simulator
 
-**Object-Oriented Programming Course — Group 4 Project**  
+**Object-Oriented Programming — Group 4 Project**  
 **Authors:** Kajetan Frątczak & Konrad Szymański  
 **AGH University of Science and Technology, 2024/25**
 
-A beautiful, multi-threaded natural selection simulator written in **Java** with **JavaFX**.  
-Watch hundreds of creatures evolve in real time: eat, reproduce, mutate, age, avoid deadly fires — all while multiple independent simulations run in parallel!
+An interactive, multi-threaded natural selection simulator written in **Java + JavaFX**.  
+Watch hundreds of creatures eat, reproduce, mutate, age, escape fire, and evolve — with many simulations running in parallel!
 
 ![Simulation Demo](demo.gif)
 
 ## Features
 
 - Fully object-oriented evolutionary model (genes, mutations, inheritance)
-- Multi-threaded — run many simulations simultaneously
-- Independent pause/resume for each simulation
-- Detailed real-time statistics (global map + selected animal)
-- Random deadly fire events
-- Smooth, responsive JavaFX interface
+- Multi-threaded — run dozens of simulations at once
+- Independent pause / resume per simulation
+- Real-time detailed statistics (global + per-animal)
+- Random deadly fires
+- Smooth & responsive JavaFX GUI
 - All graphics AI-generated
 
 ## Implemented World Variants (G4)
 
 ### Globe Map (mandatory)
-- Left/right edges wrap around (torus-style)
-- Top/bottom edges are impassable poles — animals bounce back and reverse direction when trying to cross
+- Left/right edges wrap around (torus)
+- Top/bottom = impassable poles → animals bounce & reverse direction
 
 ### Forested Equator (mandatory)
-- Plants preferentially spawn in a horizontal central belt simulating the equator and tropics
+- Plants love the central horizontal belt (tropics vibe)
 
 ### Bountiful Crops [G]
-- Plants grow uniformly, but 20% of the map is a “fertile zone”
-- Occasionally spawns large 2×2 plants that give significantly more energy
-- Multiple animals competing for a large plant are resolved the same way as for regular grass
+- 20% of the map is extra fertile
+- Occasionally spawns huge 2×2 plants → massive energy boost
+- Conflict resolution same as regular grass
 
 ### Old Age Penalty [4] — “Old age is no joy”
 - Older animals move slower
-- Every few turns they skip their move (but still lose energy)
-- Skip probability increases with age, up to a maximum of **80%**
+- Increasing chance (up to 80%) of skipping a turn while still losing energy
 
 ## Screenshots
 
@@ -46,11 +45,11 @@ Watch hundreds of creatures evolve in real time: eat, reproduce, mutate, age, av
 ### Global Map Statistics
 ![Map stats](screenshots/map_stats.png)
 
-### Selected Animal Details
-![Animal statistics](screenshots/animal_stats.png)
+### Selected Animal Statistics
+![Animal details](screenshots/animal_stats.png)
 
-### Running Simulation
-![Simulation in action](screenshots/simulation.jpg)
+### Simulation in Action
+![Running world](screenshots/simulation.jpg)
 
 ## How to Run
 
