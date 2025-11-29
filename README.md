@@ -5,14 +5,14 @@
 **AGH University of Science and Technology, 2024/25**
 
 An interactive, multi-threaded natural selection simulator written in **Java + JavaFX**.  
-Watch hundreds of creatures eat, reproduce, mutate, age, escape fire, and evolve — with many simulations running in parallel!
+Watch hundreds of creatures eat, reproduce, mutate, age, escape fire, and evolve with many simulations running in parallel!
 
 ![Simulation Demo](demo.gif)
 
 ## Features
 
 - Fully object-oriented evolutionary model (genes, mutations, inheritance)
-- Multi-threaded — run dozens of simulations at once
+- Multi-threaded run dozens of simulations at once
 - Independent pause / resume per simulation
 - Real-time detailed statistics (global + per-animal)
 - Random deadly fires
@@ -57,5 +57,6 @@ Watch hundreds of creatures eat, reproduce, mutate, age, escape fire, and evolve
 git clone https://github.com/matwoj8/Darwin_World_Simulation.git
 cd Darwin_World_Simulation
 ./gradlew run
+
 
 
