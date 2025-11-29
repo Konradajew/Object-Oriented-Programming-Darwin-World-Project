@@ -51,7 +51,7 @@ Watch hundreds of creatures eat, reproduce, mutate, age, escape fire, and evolve
 ### 🎮 Simulation in Action
 ![Running world](simulation.jpg)
 
-## 🖼️ Graphics Preview
+## 🖼️ Animal Graphics
 
 ### Animals
 <p float="left">
@@ -78,7 +78,6 @@ Watch hundreds of creatures eat, reproduce, mutate, age, escape fire, and evolve
 <p float="left">
   <img src="oolab/src/main/resources/icon.png" width="80"/>
 </p>
----
 
 ## 🚀 How to Run
 
@@ -86,4 +85,5 @@ Watch hundreds of creatures eat, reproduce, mutate, age, escape fire, and evolve
 git clone https://github.com/Konrdajew/Object-Oriented-Programming-Darwin-World-Project.git
 cd Object-Oriented-Programming-Darwin-World-Project/oolab
 ./gradlew run
+
 
