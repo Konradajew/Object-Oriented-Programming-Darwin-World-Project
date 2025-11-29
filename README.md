@@ -1,28 +1,60 @@
-# Programowanie-Obiektowe
+# Darwin World Simulator
 
-Projekt: Darwin World wersja G4
-Autorzy: Kajetan Frątczak i Konrad Szymański
+**Object-Oriented Programming Course — Group 4 Project**  
+**Authors:** Kajetan Frątczak & Konrad Szymański  
+**AGH University of Science and Technology, 2024/25**
 
-Opis wariantów:
+A beautiful, multi-threaded natural selection simulator written in **Java** with **JavaFX**.  
+Watch hundreds of creatures evolve in real time: eat, reproduce, mutate, age, avoid deadly fires — all while multiple independent simulations run in parallel!
 
-[obowiązkowo dla wszystkich] kula ziemska - lewa i prawa krawędź mapy zapętlają się (jeżeli zwierzak wyjdzie za lewą krawędź, to pojawi się 
-po prawej stronie - a jeżeli za prawą, to po lewej); górna i dolna krawędź mapy to bieguny - nie można tam wejść (jeżeli zwierzak próbuje wyjść 
-poza te krawędzie mapy, to pozostaje na polu na którym był, a jego kierunek zmienia się na odwrotny);
+![Simulation Demo](demo.gif)
 
-[obowiązkowo dla wszystkich] zalesione równiki - preferowany przez rośliny jest poziomy pas pól w centralnej części mapy (udający równik i okolice);
-[G] dorodne plony - preferowany jest rozkład równomierny, ale na pewnym kwadratowym podobszarze mapy (zajmującym 20% mapy) czasem pojawiają się 
-większe rośliny, których zjedzenie dodaje zwierzakowi znacznie więcej energii. Każda taka roślina zajmuje kwadratowy obszar 2x2 pola. 
-Obsługa sytuacji, w której więcej zwierzaków kończy ruch na jednym z pól należących do dużej rośliny powinna wyglądać tak samo jak w przypadku, 
-gdy wiele zwierząt walczy o normalną roślinę na jednym polu.
+## Features
 
-[obowiązkowo dla wszystkich] zalesione równiki - preferowany przez rośliny jest poziomy pas pól w centralnej części mapy (udający równik i okolice);
-[4] starość nie radość - starsze zwierzaki poruszają się wolniej, raz na kilka tur pomijając swój ruch, ale nadal tracąc energię. 
-Prawdopodobieństwo pominięcia ruchu rośnie z wiekiem, maksymalnie do 80%.
+- Fully object-oriented evolutionary model (genes, mutations, inheritance)
+- Multi-threaded — run many simulations simultaneously
+- Independent pause/resume for each simulation
+- Detailed real-time statistics (global map + selected animal)
+- Random deadly fire events
+- Smooth, responsive JavaFX interface
+- All graphics AI-generated
 
-Grafiki w projekcie były generowane przez AI.
+## Implemented World Variants (G4)
 
-Żeby odpalić symulację należy zmienić w App.java config1 na config30 (dodałem fixa, ale już po 6:00). 
+### Globe Map (mandatory)
+- Left/right edges wrap around (torus-style)
+- Top/bottom edges are impassable poles — animals bounce back and reverse direction when trying to cross
 
-Szerokośc i wysokość mapy można dowolnie dostosowywać na swoim sprzęcie zmieniając te linijki w App.java:
-public static int GRID_WIDTH = 1000;
-public static int GRID_HEIGHT = 1000;
+### Forested Equator (mandatory)
+- Plants preferentially spawn in a horizontal central belt simulating the equator and tropics
+
+### Bountiful Crops [G]
+- Plants grow uniformly, but 20% of the map is a “fertile zone”
+- Occasionally spawns large 2×2 plants that give significantly more energy
+- Multiple animals competing for a large plant are resolved the same way as for regular grass
+
+### Old Age Penalty [4] — “Old age is no joy”
+- Older animals move slower
+- Every few turns they skip their move (but still lose energy)
+- Skip probability increases with age, up to a maximum of **80%**
+
+## Screenshots
+
+### Start Configuration
+![Initial parameters](screenshots/start.png)
+
+### Global Map Statistics
+![Map stats](screenshots/map_stats.png)
+
+### Selected Animal Details
+![Animal statistics](screenshots/animal_stats.png)
+
+### Running Simulation
+![Simulation in action](screenshots/simulation.jpg)
+
+## How to Run
+
+```bash
+git clone https://github.com/matwoj8/Darwin_World_Simulation.git
+cd Darwin_World_Simulation
+./gradlew run
