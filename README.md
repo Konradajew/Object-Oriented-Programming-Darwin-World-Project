@@ -51,6 +51,33 @@ Watch hundreds of creatures eat, reproduce, mutate, age, escape fire, and evolve
 ### 🎮 Simulation in Action
 ![Running world](simulation.jpg)
 
+## 🖼️ Graphics Preview
+
+### Animals
+<p float="left">
+  <img src="oolab/src/main/resources/animal0.png" width="80"/>
+  <img src="oolab/src/main/resources/animal1.png" width="80"/>
+  <img src="oolab/src/main/resources/animal2.png" width="80"/>
+  <img src="oolab/src/main/resources/animal3.png" width="80"/>
+  <img src="oolab/src/main/resources/animal4.png" width="80"/>
+  <img src="oolab/src/main/resources/animal5.png" width="80"/>
+  <img src="oolab/src/main/resources/animal6.png" width="80"/>
+  <img src="oolab/src/main/resources/animal7.png" width="80"/>
+  <img src="oolab/src/main/resources/animal8.png" width="80"/>
+  <img src="oolab/src/main/resources/animal9.png" width="80"/>
+</p>
+
+### Plants & Terrain
+<p float="left">
+  <img src="oolab/src/main/resources/grass.png" width="80"/>
+  <img src="oolab/src/main/resources/biggrass.png" width="80"/>
+  <img src="oolab/src/main/resources/emptyfield.png" width="80"/>
+</p>
+
+### App Icon
+<p float="left">
+  <img src="oolab/src/main/resources/icon.png" width="80"/>
+</p>
 ---
 
 ## 🚀 How to Run
@@ -59,3 +86,4 @@ Watch hundreds of creatures eat, reproduce, mutate, age, escape fire, and evolve
 git clone https://github.com/Konrdajew/Object-Oriented-Programming-Darwin-World-Project.git
 cd Object-Oriented-Programming-Darwin-World-Project/oolab
 ./gradlew run
+
